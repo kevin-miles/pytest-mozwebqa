@@ -100,6 +100,10 @@ Run tests against a local webdriver using Google Chrome:
 
     $ py.test --baseurl=http://example.com --driver=chrome --chromepath=/Applications/chromedriver
 
+Run headless tests against a local webdriver using PhantomJS:
+
+    $ py.test --baseurl=http://example.com --driver=phantomjs
+
 Run tests against a remote webdriver server either directly or via grid:
 
     $ py.test --baseurl=http://example.com --browsername=firefox --browserver=5 --platform=mac
