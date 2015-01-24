@@ -237,7 +237,7 @@ With Selenium RC you can capture log files. By default log files are not capture
 ### Example
 
     import pytest
-    
+
     @pytest.mark.public
     def test_public(self, mozwebqa):
         home_pg = home_page.HomePage(mozwebqa)
@@ -260,3 +260,15 @@ If you want the browser launched to use a proxy (currently only supported by Fir
 ### Example (proxy is running on localhost port 8080)
 
     --proxyhost=localhost --proxyport=8080
+
+Using PhantomJS for headless testing
+----------------------------
+### Download
+[http://phantomjs.org](http://phantomjs.org/)
+
+### Add to PATH
+    PATH=$PATH:/path/to/PhantomJS
+
+### Run using flag
+    --driver=phantomjs
+See example section for more info.
