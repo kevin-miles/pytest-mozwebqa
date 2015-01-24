@@ -247,7 +247,7 @@ You can also explicitly mark the test as private, which sets the test appopriate
 ### Example
 
     import pytest
-    
+
     @pytest.mark.private
     def test_private(self, mozwebqa):
         home_pg = home_page.HomePage(mozwebqa)
